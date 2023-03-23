@@ -1,0 +1,62 @@
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 0.5rem;
+  }
+  .inputs input {
+    width: 80vw;
+    height: 8vh;
+    margin-left: 0;
+    margin-top: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  button {
+    width: 80vw;
+    height: 8vh;
+    margin-left: 0;
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .inputs input:focus {
+    transform: scale(1.05);
+  }
+}
+
+/* For desktop devices */
+@media only screen and (min-width: 601px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .inputs input {
+    width: 40vw;
+    height: 10vh;
+    margin-left: 21rem;
+    margin-top: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .inputs input:focus {
+    transform: scale(1.05);
+  }
+  button {
+    width: 30vw;
+    height: 10vh;
+    margin-left: 25rem;
+    margin-top: 15px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  button:hover {
+    background-color: #4d4d4d;
+  }
+}
